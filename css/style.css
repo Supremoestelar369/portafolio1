@@ -1,0 +1,849 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #03051c;
+    --color2: #bcbe34;
+    --color3: #2a2b3d;
+    --color4: #d2cecb;
+}
+
+body { height: 600px;
+    background-image: url("https://fondosmil.com/fondo/17034.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    } 
+
+body {
+    
+    font-family: "Montserrat";
+    background-color: var(--color1);
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+
+}
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bar_menu {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    margin-right: 20px;
+    text-align: center;
+}
+.bar_menu img {
+    height: 30px;
+    margin-top: 10px;
+}
+.check {
+    display: none;
+}
+.list_menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    text-align: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 20s ease-in-out;
+}
+.list_menu li {
+    line-height: 10px;
+    margin: 30px 0;
+    font-size: 16px;
+}
+.list_menu li a {
+    color: #ffffff;
+}
+
+.list_menu li a.active, .list_menu li a:hover {
+    color: #34afbe;
+    transition: .3s;
+}
+.check:checked + .list_menu {
+    background-color: #2a2b3d;
+    display: block;
+    position: absolute;
+    z-index: 20;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+}
+
+
+/* --------Blog personal------ */
+/*-------- presentacion letras ----------*/
+.person_block {
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteiner1 {
+    width: 90%;
+    position: absolute;
+    z-index: 3;
+    margin-top: 0px;
+}
+.title_person {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.title_person1 .p1 {
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.title_person .underline {
+    background-color: #ffffff;
+    width: 115px;
+    height: 3px;
+}
+.title_person1 h1 {
+    width: 120px;
+    font-size: 50px;
+    color: var(--color2);
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.title_person1 .p2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.title_person2 .p1 {
+    font-size: 18px;
+}
+.title_person2 .p1 span{
+    color: var(--color2);
+}
+.title_person2 .networks {
+    display: flex;
+    gap: 15px;
+}
+.networks div {
+    background-color: var(--color4);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 10px;overflow: hidden;
+    position: relative;
+}
+.networks div img {
+    width: 24px;
+    position: absolute;
+    top: 6px;
+    left: 5.5px;
+}
+
+
+/* ------- presentacion imagenes ----- */
+.circle {
+    background-color: var(--color3);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+
+}
+.circle .circle_img {
+    width: 240px;
+    position: relative;
+    left: 0px;
+    top: -32px;
+    z-index: 1;
+}
+.line {
+    background-color: var(--color3);
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 0px;
+    border-radius: 10px;
+    margin-top: -13px;
+}
+.line_blk1 {
+    display: inline-block;    
+    background-color: var(--color4);
+    width: 80px;
+    height: 60%;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.line_blk1 img{
+    width: 40px;
+    padding-top: 5px;
+}
+/* -------------------------------------------------------------- */
+
+/* ----------- acerca de mi---------------------- */
+.block2_my {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+.block2_title {
+    color: var(--color2);
+    font-size: 32px;
+    font-weight: 600;
+}
+.block2_p {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 20px;
+    line-height: 25px;
+}
+/* --------servicios */
+
+.Block3_serv {
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 290px;
+}
+.Block3_serv h2{
+    color: var(--color2);
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.services {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 25px;
+    overflow-x: scroll;
+    margin-top: 30px;
+}
+.services::-webkit-scrollbar {
+    display: none;
+}
+
+
+.images {
+    background-color: #ffffff;
+    width: 300px;
+    height: 350px;
+    position: relative;
+    border-radius: 5px;
+    text-align: center; 
+    
+}
+
+.images_img1 {
+    
+    width: 300px;
+    position: relative;
+    z-index: 1;
+}
+.images_cont {
+    position: relative;
+    z-index: 5;
+    top: -100px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.images_cont h3 {
+    color: #000000;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.images_cont p {
+    font-size: 18px;
+    margin-top: 30px;
+    color: #aeaeae;
+    
+}
+/* ------------------------------- */
+/* ---habilidades------- */
+.skills {
+    width: 100%;
+    padding-bottom: 10px;
+}
+.skills h2 {
+    color: var(--color2);
+    font-size: 32px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.skills1 {
+    position: relative;
+}
+.skillsp1,
+.skillsp3,
+.skillsp5
+{
+    font-size: 18px;
+    font-weight: 600;;
+}
+.skillsp2,
+.skillsp4,
+.skillsp6 {
+    position: absolute;
+    font-size: 14px;
+}
+.skillsp2{
+    top: 12px;
+    left: 24%;
+}
+.skillsp4{
+    top: 12px;
+    left: 22%;
+}
+.skillsp6{
+    top: 12px;
+    left: 32%;
+}
+.ctnr1 {
+    width: 100%;
+    height: 13px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.ctnr_int1,
+.ctnr_int2,
+.ctnr_int3{
+    background-color: var(--color2);
+}
+.ctnr_int1 {
+    width: 24%;
+    height: 100%;
+}
+.ctnr_int2 {
+    width: 22%;
+    height: 100%;
+}
+.ctnr_int3 {
+    width: 32%;
+    height: 100%;
+}
+/* ---------------------- */
+
+/*---------- Mi portafolio------- */
+.portafolio {
+    color: var(--color2);
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+    text-align: center;
+}
+.portafolio_cntr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+    overflow-x: scroll;
+    padding-top: 30px;
+}
+
+.portafolio_cntr::-webkit-scrollbar {
+    display: none;
+}
+.portafolio1 {
+    width: 300px;
+    
+}
+.portafolio_img1 {
+    width: 300px;
+}
+/* -------------------------------- */
+
+/* -----Contacto--- */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+.contacto h2 {
+    color:var(--color2);
+    font-size: 32px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.contacto_cntr {
+    width: 100%;
+    display: grid;
+    justify-content:end;
+    gap: 30px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+.contactoInput {
+    /* width: 100%; */
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.mensaje {
+    text-align: start;
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+}
+
+.contactoBoton {
+    width: 50%;
+    margin-top: 30px;
+    background-color: #10555e;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 15px; color: white;
+    -webkit-transition: background 1s;/* PARA VERSIONES 3.1 A 6.0 DE SAFARI */
+    transition: background 1s;
+    }
+    .contactoBoton:hover{
+    background: #524d9c;
+    }
+
+/* .contacto_cntr div  {
+    background-color: #ffffff;
+    color: #000000;
+    width: 240px;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+} */
+/* .contacto_cntr h3 {
+    font-size: 16px;
+    padding-top: 10px;
+} */
+/* .contacto_cntr p {
+    color: var(--color4);
+    padding-top: 10px;
+}
+.contacto_img {
+    width: 80px;
+}
+.contacto_datos2 {
+    margin-left: calc(100% - 240px);
+    margin-top: 30px;
+} */
+/* ----fooooter */
+.footer {
+    background-color: #2a2b3d;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: #34afbe;
+    font-size: 18px;
+    padding-top: 37px;
+}
+.final img {
+    width: 19px;
+}
+
+
+/* ----------responsive------ */
+
+@media only screen and (min-width: 768px) {
+    /*------------presentacio letras---- */
+    .title_person1 .p1 {
+        font-size: 40px;
+    }
+    .title_person .underline {
+        width: 200px;
+        height: 3px;
+    }
+    .title_person1 h1 {
+        width: 500px;
+        font-size: 100px;
+        padding-bottom: 10px;
+    }
+    .title_person1 .p2 {
+        font-size: 30px;
+        margin-top: 10p
+    }
+    .title_person2 .p1 {
+        font-size: 30px;
+        padding-right: 90px;
+    }
+
+    /* ------- presentacion imagenes----*/
+    .circle {
+        width: 400px;
+        height: 400px;
+    }
+    .circle .circle_img {
+        width: 300px;
+        left: 15px;
+        top: -30px;
+    }
+    .line {
+        width: 90%;
+        height: 135px;
+        margin-top: -30px;
+    }
+    .line_blk1 {
+        width: 130px;
+        height: 60%;
+    }
+    .line_blk1 img{
+        width: 70px;
+        padding-top: 6px;
+    }
+    /* ---------- skills-- */
+    .skills {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 10px;
+        }
+         /* -----Contacto--- */
+    .contacto {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+    header {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 30px;
+    }
+    nav {
+        width: 100%;
+        height: 100%;
+    }
+    .men_amb {
+        width: 100%;
+        overflow: hidden;
+        }
+    .bar_menu {
+        display: none;
+    }
+    .bar_menu img {
+        height: 30px;
+        margin-top: 10px;
+    }
+    .check {
+        display: none;
+    }
+    .list_menu {
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        gap: 40px;
+        width: 100%;
+        top: 0;
+        text-align: center;
+        clip-path: none;
+        padding-right: 60px;
+    }
+    .list_menu li {
+        line-height: 10px;
+        margin: 30px 0;
+        font-size: 15px;
+        right: 0;
+    }
+    .list_menu .list1 {
+        font-weight: 900;
+    }
+    .list_menu li a {
+        color: #ffffff;
+    }
+    /* ----presentacion */
+    .conteiner1 {
+        width: 90%;
+        position: absolute;
+        z-index: 3;
+        margin-top: 50px;
+    }
+    .title_person1 .p1 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .title_person .underline {
+        width: 330px;
+        height: 3px;
+    }
+    .title_person1 h1 {
+        width: 120px;
+        font-size: 140px;
+        color: var(--color2);
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    .title_person1 .p2 {
+        font-size: 35px;
+        font-weight: 400;
+        margin-top: 10p
+    }
+    .title_person2 .p1 {
+        font-size: 35px;
+        padding-right: 90px;
+    }
+    .title_person2 .p1 span{
+        font-weight:900;
+    }
+    .title_person2 .networks {
+        display: flex;
+        gap: 15px;
+    }
+    .networks div {
+        width: 55px;
+        height: 55px;
+        margin-top: 10px;
+    }
+    .networks div img {
+        width: 35px;
+        top: 10px;
+        left: 10px;
+    }
+    /* ------- presentacion imagenes ----- */
+    .circle {
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        z-index: 0;
+    }
+    .circle .circle_img {
+        width: 390px;
+        left: 0px;
+        top: -50px;
+    }
+    .line {
+        width: 90%;
+        height: 180px;
+        margin-top: -30px;
+    }
+    .line_blk1 {
+        width: 160px;
+        height: 65%;
+    }
+    .line_blk1 img{
+        width: 95px;
+        padding-top: 11px;
+    }
+/* ---------- skills-- */
+    .skills {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 10px;
+    }
+    /* ----------mi portafolio---- */
+    .portafolio {
+        font-weight: 600;
+        margin-top: 50px;
+    }
+    .portafolio1 {
+        width: 400px;
+    }
+    .portafolio_img1 {
+        width: 400px;
+    }
+    /* -----Contacto--- */
+    .contacto {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+    .contacto_cntr {
+        padding-top: 40px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+    .list_menu {
+        gap: 75px;
+        padding-right: 60px;
+    }
+    .list_menu li {
+        line-height: 10px;
+        margin: 30px 0;
+        font-size: 18px;
+        right: 0;
+    }
+
+    /* ----presentacion */
+    .conteiner1 {
+        width: 90%;
+        position: absolute;
+        z-index: 3;
+        margin-top: 50px;
+    }
+    .title_person1 .p1 {
+        font-size: 50px;
+        font-weight: 400;
+    }
+    .title_person .underline {
+        width: 330px;
+        height: 3px;
+    }
+    .title_person1 h1 {
+        width: 150px;
+        font-size: 140px;
+        color: var(--color2);
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    .title_person1 .p2 {
+        font-size: 45px;
+        font-weight: 400;
+        margin-top: 10p
+    }
+    .title_person2 .p1 {
+        font-size: 45px;
+        padding-right: 90px;
+    }
+    .title_person2 .p1 span{
+        font-weight:900;
+    }
+    .title_person2 .networks {
+        display: flex;
+        gap: 15px;
+    }
+    .networks div {
+        width: 55px;
+        height: 55px;
+        margin-top: 10px;
+    }
+    .networks div img {
+        width: 35px;
+        top: 10px;
+        left: 10px;
+    }
+    /* ------- presentacion imagenes ----- */
+    .circle {
+        width: 650px;
+        height: 650px;
+        margin-top: 40px;
+    }
+    .circle .circle_img {
+        width: 500px;
+        left: -010px;
+        top: -56px;
+    }
+    .line {
+        width: 90%;
+        height: 220px;
+        margin-top: -40px;
+    }
+    .line_blk1 {
+        width: 220px;
+        height: 60%;
+    }
+    .line_blk1 img{
+        width: 100px;
+        padding-top: 15px;
+    }
+    /* -----Acerca de mi-------- */
+    .block2_my {
+        margin-top: 50px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .block2_title {
+        font-size: 32px;
+    }
+    .block2_p {
+        font-size: 18px;
+        margin-top: 30px;
+        line-height: 30px;
+    }
+    /* ------ servicios--- */
+    .Block3_serv {
+        text-align: center;
+        width: 85%;
+        height: 200px;
+        margin-bottom: 290px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+       /* --------- skills-- */
+    /* .skills {
+       width: 70%;
+       margin-right: auto;
+       margin-left: auto;
+       padding-bottom: 10px;
+    } */
+    /* ----------mi portafolio---- */
+    .portafolio1 {
+        width: 500px;
+    }
+    .portafolio_img1 {
+        width: 500px;
+    }
+    /* -----Contacto--- */
+    .contacto {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+    .contacto.contactoBoton {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+    
+}
