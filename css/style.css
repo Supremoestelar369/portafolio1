@@ -320,11 +320,11 @@ main {
 }
 .skillsp2{
     top: 12px;
-    left: 24%;
+    left: 14%;
 }
 .skillsp4{
     top: 12px;
-    left: 22%;
+    left: 18%;
 }
 .skillsp6{
     top: 12px;
@@ -345,11 +345,11 @@ main {
     background-color: var(--color2);
 }
 .ctnr_int1 {
-    width: 24%;
+    width: 14%;
     height: 100%;
 }
 .ctnr_int2 {
-    width: 22%;
+    width: 18%;
     height: 100%;
 }
 .ctnr_int3 {
